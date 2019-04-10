@@ -1,0 +1,77 @@
+:root {
+    --bg-one: #eec1ea;
+    --bg-two: #be97dc;
+    --bg-three: #a374d5;
+    --bg-title: #ffc15e;
+    --bg-background: #fffbbe;
+    --bg-hover: #c1eaee;
+}
+
+body {
+    background-color: var(--bg-background);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: 1fr 5fr;
+    align-items: end;
+    grid-row-gap: 100px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.title {
+    background-color: var(--bg-title);
+    font-family: "Montserrat";
+    font-size: 2rem;
+    grid-row: 1;
+    grid-column: 1/7;
+    text-align: center;
+}
+
+.USA {
+    background-color: var(--bg-one);
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    font-family: "Ubuntu";
+}
+
+.Canada {
+    background-color: var(--bg-two);
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    font-family: "Ubuntu";
+}
+
+.Singapore {
+    background-color: var(--bg-three);
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+    font-family: "Ubuntu";
+}
+
+.Australia {
+    background-color: var(--bg-one);
+    grid-column: 4;
+    grid-row: 2;
+    text-align: center;
+    font-family: "Ubuntu";
+}
+
+.Philippines {
+    background-color: var(--bg-three);
+    grid-column: 5;
+    grid-row: 2;
+    text-align: center;
+    font-family: "Ubuntu";
+}
+
+.co:hover {
+    background-color: var(--bg-hover);
+    transition: 1s;
+}
